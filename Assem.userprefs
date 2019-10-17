@@ -1,0 +1,37 @@
+﻿<Properties StartupConfiguration="{8A7457B3-41F0-45EB-8596-5A8D35C22F54}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebApplication2/Scripts/geometries/EdgesGeometry.js">
+    <Files>
+      <File FileName="WebApplication2/Models/MeViewModels.cs" Line="12" Column="2" />
+      <File FileName="WebApplication2/Scripts/animation/AnimationAction.js" Line="1" Column="121" />
+      <File FileName="WebApplication2/Views/Web.config" Line="28" Column="3" />
+      <File FileName="WebApplication2/Views/_ViewStart.cshtml" Line="1" Column="1" />
+      <File FileName="WebApplication2/Views/Shared/_Layout.cshtml" Line="192" Column="64" />
+      <File FileName="WebApplication2/Views/Shared/_LoginPartial.cshtml" Line="23" Column="1" />
+      <File FileName="WebApplication2/Views/Manage/AddPhoneNumber.cshtml" Line="1" Column="1" />
+      <File FileName="WebApplication2/Views/Manage/VerifyPhoneNumber.cshtml" Line="1" Column="1" />
+      <File FileName="WebApplication2/Views/Manage/Index.cshtml" Line="62" Column="102" />
+      <File FileName="WebApplication2/Views/Home/Index.cshtml" Line="27" Column="2" />
+      <File FileName="WebApplication2/Views/Home/_Home.cshtml" Line="1" Column="1" />
+      <File FileName="WebApplication2/Views/Home/Index2Partial.cshtml" Line="29" Column="17" />
+      <File FileName="WebApplication2/Views/Account/Login.cshtml" Line="28" Column="31" />
+      <File FileName="WebApplication2/Views/Account/Register.cshtml" Line="26" Column="22" />
+      <File FileName="WebApplication2/Views/Shared/Error.cshtml" Line="1" Column="1" />
+      <File FileName="WebApplication2/Views/Shared/Lockout.cshtml" Line="1" Column="1" />
+      <File FileName="WebApplication2/App_Start/BundleConfig.cs" Line="24" Column="67" />
+      <File FileName="WebApplication2/App_Start/RouteConfig.cs" Line="1" Column="1" />
+      <File FileName="WebApplication2/App_Start/Startup.Auth.cs" Line="1" Column="1" />
+      <File FileName="WebApplication2/Startup.cs" Line="19" Column="1" />
+      <File FileName="WebApplication2/Global.asax" Line="2" Column="1" />
+      <File FileName="WebApplication2/Scripts/Sidebar.Geometry.js" Line="16" Column="45" />
+      <File FileName="WebApplication2/Scripts/geometries/TextGeometry.js" Line="1" Column="1" />
+      <File FileName="WebApplication2/Scripts/geometries/EdgesGeometry.js" Line="20" Column="2" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.ModelLoader PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{8A7457B3-41F0-45EB-8596-5A8D35C22F54}|">
+  <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="Global.asax.cs" Line="17" Column="25" />
+      <File FileName="Views/Shared/_Layout.cshtml" Line="63" Column="12" />
+      <File FileName="Views/Home/Index.cshtml" Line="26" Column="37" />
+      <File FileName="Startup.cs" Line="15" Column="32" />
+      <File FileName="Views/Web.config" Line="34" Column="22" />
+      <File FileName="Views/Home/Index2Partial.cshtml" Line="18" Column="13" />
+      <File FileName="Views/Shared/Error.cshtml" Line="1" Column="1" />
+      <File FileName="Scripts/PureJs/Three/three.js" Line="17835" Column="2" />
+      <File FileName="App_Start/BundleConfig.cs" Line="53" Column="23" />
+      <File FileName="Views/Shared/_LoginPartial.cshtml" Line="17" Column="2" />
+      <File FileName="examples/js/renderers/CanvasRenderer.js" Line="129" Column="2" />
+      <File FileName="Scripts/loaders/Loader.js" Line="189" Column="8" />
+      <File FileName="Scripts/loaders/AnimationLoader.js" Line="21" Column="48" />
+      <File FileName="Scripts/app/TrackballControls.js" Line="22" Column="25" />
+      <File FileName="Scripts/textures/Texture.js" Line="137" Column="33" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.ModelLoader PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+</Properties>

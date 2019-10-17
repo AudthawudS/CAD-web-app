@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    @Styles.Render("~/Content/css")
+    <style>
+        .ui-menu {
+            width: 150px;
+        }
+
+        .nb {
+            border: none !important;
+        }
+
+        .miclo {
+            background-color: steelblue;
+            color: white;
+            font-size: 1.25em;
+            font-weight: 700;
+            padding: 3px;
+        }
+
+        #draggable {
+            width: 150px;
+           
+        }
+    </style>
+    @Scripts.Render("~/bundles/modernizr")
+    
+    @Scripts.Render("~/bundles/jquery")
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  
+
+</head>
+<body>
+    
+    <div>
+        
+        @RenderBody()
+        @RenderSection("SPAViews", required: false)
+        
+    </div>
+
+    
+    @Scripts.Render("~/bundles/bootstrap")
+
+    @RenderSection("Scripts", required: false)
+    <script>
+
+        $(function () {
+            $("#draggable").draggable();
+        });
+
+
+
+        $(function () {
+            $("#menu").menu();
+        });
+    </script>
+    <script src="~/Scripts/loaders/Loader.js"></script>
+    <script src="~/Scripts/loaders/AnimationLoader.js"></script>
+    <script src="~/scripts/app/TrackballControls.js"></script>
+    @*<script src="~/Scripts/loaders/AudioLoader.js"></script>
+    <script src="~/Scripts/loaders/BufferGeometryLoader.js"></script>
+    <script src="~/Scripts/loaders/Cache.js"></script>
+    <script src="~/Scripts/loaders/CompressedTextureLoader.js"></script>
+    <script src="~/Scripts/loaders/CubeTextureLoader.js"></script>
+    <script src="~/Scripts/loaders/DataTextureLoader.js"></script>
+    <script src="~/Scripts/loaders/FileLoader.js"></script>
+    <script src="~/Scripts/loaders/FontLoader.js"></script>
+    <script src="~/Scripts/loaders/ImageLoader.js"></script>
+    <script src="~/Scripts/loaders/JSONLoader.js"></script>
+    <script src="~/Scripts/loaders/LoadingManager.js"></script>
+    <script src="~/Scripts/loaders/MaterialLoader.js"></script>
+    <script src="~/Scripts/loaders/ObjectLoader.js"></script>
+    <script src="~/Scripts/loaders/TextureLoader.js"></script>*@
+
+
+
+    @*<script src="~/Scripts/app/Loader.js"></script>
+    <script src="~/Scripts/commands/AddObjectCommand.js"></script>
+    <script src="~/Scripts/commands/AddScriptCommand.js"></script>
+    <script src="~/Scripts/commands/MoveObjectCommand.js"></script>
+    <script src="~/Scripts/commands/MultiCmdsCommand.js"></script>
+    <script src="~/Scripts/commands/RemoveObjectCommand.js"></script>
+    <script src="~/Scripts/commands/RemoveScriptCommand.js"></script>
+    <script src="~/Scripts/commands/SetColorCommand.js"></script>
+    <script src="~/Scripts/commands/SetGeometryCommand.js"></script>
+    <script src="~/Scripts/commands/SetGeometryValueCommand.js"></script>
+    <script src="~/Scripts/commands/SetMaterialColorCommand.js"></script>
+    <script src="~/Scripts/commands/SetMaterialCommand.js"></script>
+    <script src="~/Scripts/commands/SetMaterialMapCommand.js"></script>
+    <script src="~/Scripts/commands/SetMaterialValueCommand.js"></script>
+    <script src="~/Scripts/commands/SetPositionCommand.js"></script>
+    <script src="~/Scripts/commands/SetRotationCommand.js"></script>
+    <script src="~/Scripts/commands/SetScaleCommand.js"></script>
+    <script src="~/Scripts/commands/SetSceneCommand.js"></script>
+    <script src="~/Scripts/commands/SetScriptValueCommand.js"></script>
+    <script src="~/Scripts/commands/SetUuidCommand.js"></script>
+    <script src="~/Scripts/commands/SetValueCommand.js"></script>
+    <script src="~/Scripts/libs/acorn/acorn.js"></script>
+    <script src="~/Scripts/libs/acorn/acorn_loose.js"></script>
+    <script src="~/Scripts/libs/acorn/walk.js"></script>
+    <script src="~/Scripts/libs/codemirror/addon/dialog.js">  </script>
+    <script src="~/Scripts/libs/codemirror/addon/show-hint.js"></script>
+    <script src="~/Scripts/libs/codemirror/addon/tern.js"></script>
+    <script src="~/Scripts/libs/codemirror/mode/glsl.js"></script>
+    <script src="~/Scripts/libs/codemirror/mode/javascript.js"></script>
+    <script src="~/Scripts/libs/codemirror/codemirror.js"></script>
+    <script src="~/Scripts/libs/tern-threejs/threejs.js"></script>
+    <script src="~/Scripts/libs/ternjs/comment.js"></script>
+    <script src="~/Scripts/libs/ternjs/def.js"></script>
+    <script src="~/Scripts/libs/ternjs/doc_comment.js"></script>
+    <script src="~/Scripts/libs/ternjs/infer.js"></script>
+    <script src="~/Scripts/libs/ternjs/polyfill.js"></script>
+    <script src="~/Scripts/libs/ternjs/signal.js"></script>
+    <script src="~/Scripts/libs/ternjs/tern.js"></script>
+    <script src="~/Scripts/libs/app.js"></script>
+    <script src="~/Scripts/libs/glslprep.min.js"></script>
+    <script src="~/Scripts/libs/html2canvas.js"></script>
+    <script src="~/Scripts/libs/jsonlint.js"></script>
+    <script src="~/Scripts/libs/signals.min.js"></script>
+    <script src="~/Scripts/libs/three.html.js"></script>
+    <script src="~/Scripts/libs/ui.js"></script>
+    <script src="~/Scripts/libs/ui.three.js"></script>
+    <script src="~/Scripts/libs/esprima.js"></script>
+
+    <script src="~/Scripts/animation/tracks/BooleanKeyframeTrack.js"></script>
+    <script src="~/Scripts/animation/tracks/ColorKeyframeTrack.js"></script>
+    <script src="~/Scripts/animation/tracks/NumberKeyframeTrack.js"></script>
+    <script src="~/Scripts/animation/tracks/QuaternionKeyframeTrack.js"></script>
+    <script src="~/Scripts/animation/tracks/StringKeyframeTrack.js"></script>
+    <script src="~/Scripts/animation/tracks/VectorKeyframeTrack.js"></script>
+    <script src="~/Scripts/animation/AnimationAction.js"></script>
+    <script src="~/Scripts/animation/AnimationClip.js"></script>
+    <script src="~/Scripts/animation/AnimationMixer.js"></script>
+    <script src="~/Scripts/animation/AnimationObjectGroup.js"></script>
+    <script src="~/Scripts/animation/AnimationUtils.js"></script>
+    <script src="~/Scripts/animation/KeyframeTrack.js"></script>
+    <script src="~/Scripts/animation/KeyframeTrackConstructor.js"></script>
+    <script src="~/Scripts/animation/KeyframeTrackPrototype.js"></script>
+    <script src="~/Scripts/animation/PropertyBinding.js"></script>
+    <script src="~/Scripts/animation/PropertyMixer.js"></script>
+    <script src="~/Scripts/core/BufferAttribute.js"></script>
+    <script src="~/Scripts/core/BufferGeometry.js"></script>
+    <script src="~/Scripts/core/Clock.js"></script>
+    <script src="~/Scripts/core/DirectGeometry.js"></script>
+    <script src="~/Scripts/core/EventDispatcher.js"></script>
+    <script src="~/Scripts/core/Face3.js"></script>
+    <script src="~/Scripts/core/Geometry.js"></script>
+    <script src="~/Scripts/core/InstancedBufferAttribute.js"></script>
+    <script src="~/Scripts/core/InstancedBufferGeometry.js"></script>
+    <script src="~/Scripts/core/InstancedInterleavedBuffer.js"></script>
+    <script src="~/Scripts/core/InterleavedBuffer.js"></script>
+    <script src="~/Scripts/core/InterleavedBufferAttribute.js"></script>
+    <script src="~/Scripts/core/Layers.js"></script>
+    <script src="~/Scripts/core/Object3D.js"></script>
+    <script src="~/Scripts/core/Raycaster.js"></script>
+    <script src="~/Scripts/core/Uniform.js"></script>
+    <script src="~/Scripts/extras/ShapeUtils.js"></script>
+    <script src="~/Scripts/extras/SceneUtils.js"></script>
+    <script src="~/Scripts/extras/objects/ImmediateRenderObject.js"></script>
+    <script src="~/Scripts/extras/curves/SplineCurve.js"></script>
+    <script src="~/Scripts/extras/curves/QuadraticBezierCurve3.js"></script>
+    <script src="~/Scripts/extras/curves/QuadraticBezierCurve.js"></script>
+    <script src="~/Scripts/extras/curves/LineCurve3.js"></script>
+    <script src="~/Scripts/extras/curves/LineCurve.js"></script>
+    <script src="~/Scripts/extras/curves/EllipseCurve.js"></script>
+    <script src="~/Scripts/extras/curves/CubicBezierCurve3.js"></script>
+    <script src="~/Scripts/extras/curves/CubicBezierCurve.js"></script>
+    <script src="~/Scripts/extras/curves/CatmullRomCurve3.js"></script>
+    <script src="~/Scripts/extras/curves/ArcCurve.js"></script>
+    <script src="~/Scripts/extras/core/ShapePath.js"></script>
+    <script src="~/Scripts/extras/core/Shape.js"></script>
+    <script src="~/Scripts/extras/core/PathPrototype.js"></script>
+    <script src="~/Scripts/extras/core/Path.js"></script>
+    <script src="~/Scripts/extras/core/Interpolations.js"></script>
+    <script src="~/Scripts/extras/core/Font.js"></script>
+    <script src="~/Scripts/extras/core/CurvePath.js"></script>
+    <script src="~/Scripts/extras/core/Curve.js"></script>
+    <script src="~/Scripts/geometries/BoxGeometry.js"></script>
+    <script src="~/Scripts/geometries/CircleGeometry.js"></script>
+    <script src="~/Scripts/geometries/ConeGeometry.js"></script>
+    <script src="~/Scripts/geometries/CylinderGeometry.js"></script>
+    <script src="~/Scripts/geometries/DodecahedronGeometry.js"></script>
+    <script src="~/Scripts/geometries/EdgesGeometry.js"></script>
+    <script src="~/Scripts/geometries/ExtrudeGeometry.js"></script>
+    <script src="~/Scripts/geometries/Geometries.js"></script>
+    <script src="~/Scripts/geometries/IcosahedronGeometry.js"></script>
+    <script src="~/Scripts/geometries/LatheGeometry.js"></script>
+    <script src="~/Scripts/geometries/OctahedronGeometry.js"></script>
+    <script src="~/Scripts/geometries/ParametricGeometry.js"></script>
+    <script src="~/Scripts/geometries/PlaneGeometry.js"></script>
+    <script src="~/Scripts/geometries/PolyhedronGeometry.js"></script>
+    <script src="~/Scripts/geometries/RingGeometry.js"></script>
+    <script src="~/Scripts/geometries/ShapeGeometry.js"></script>
+    <script src="~/Scripts/geometries/SphereGeometry.js"></script>
+    <script src="~/Scripts/geometries/TetrahedronGeometry.js"></script>
+    <script src="~/Scripts/geometries/TextGeometry.js"></script>
+    <script src="~/Scripts/geometries/TorusGeometry.js"></script>
+    <script src="~/Scripts/geometries/TorusKnotGeometry.js"></script>
+    <script src="~/Scripts/geometries/TubeGeometry.js"></script>
+    <script src="~/Scripts/geometries/WireframeGeometry.js"></script>
+    <script src="~/Scripts/helpers/AxesHelper.js"></script>
+    <script src="~/Scripts/helpers/GridHelper.js"></script>*@
+    
+
+</body>
+</html>
